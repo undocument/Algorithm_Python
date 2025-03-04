@@ -5,8 +5,6 @@ def movezero(a):
 
     for i in range(len(a)):
         if a[i] !=0:
-            print(a[i])
-            print(a[last_noonzero_index])
             a[last_noonzero_index], a[i] = a[i], a[last_noonzero_index]
             last_noonzero_index += 1
     return a
